@@ -1,0 +1,4 @@
+AAAAAA:::5
+AAAAAC:::4
+ATTAAC:::3
+CAGTGA:::2
