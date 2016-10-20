@@ -1,0 +1,9 @@
+E:\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\bin\Debug\GeneMap_Bowtie_R.exe.config
+E:\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\bin\Debug\GeneMap_Bowtie_R.exe
+E:\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\bin\Debug\GeneMap_Bowtie_R.pdb
+E:\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\obj\Debug\GeneMap_Bowtie_R.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\obj\Debug\GeneMap_Bowtie_R.exe
+E:\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\obj\Debug\GeneMap_Bowtie_R.pdb
+E:\Spring 2015\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\bin\Debug\GeneMap_Bowtie_R.exe.config
+E:\Spring 2015\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\obj\Debug\GeneMap_Bowtie_R.exe
+E:\Spring 2015\Bio Informatics\Assignment 7\GeneMap_Bowtie_R\GeneMap_Bowtie_R\obj\Debug\GeneMap_Bowtie_R.pdb
