@@ -1,0 +1,6 @@
+E:\Bio Informatics\Assignment 8\ReadsFileModify\ReadsFileModify\bin\Debug\ReadsFileModify.exe.config
+E:\Bio Informatics\Assignment 8\ReadsFileModify\ReadsFileModify\bin\Debug\ReadsFileModify.exe
+E:\Bio Informatics\Assignment 8\ReadsFileModify\ReadsFileModify\bin\Debug\ReadsFileModify.pdb
+E:\Bio Informatics\Assignment 8\ReadsFileModify\ReadsFileModify\obj\Debug\ReadsFileModify.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 8\ReadsFileModify\ReadsFileModify\obj\Debug\ReadsFileModify.exe
+E:\Bio Informatics\Assignment 8\ReadsFileModify\ReadsFileModify\obj\Debug\ReadsFileModify.pdb

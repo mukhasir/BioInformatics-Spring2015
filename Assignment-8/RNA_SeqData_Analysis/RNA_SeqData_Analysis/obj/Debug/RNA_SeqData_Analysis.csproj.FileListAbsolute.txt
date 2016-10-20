@@ -1,0 +1,9 @@
+E:\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\bin\Debug\RNA_SeqData_Analysis.exe.config
+E:\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\bin\Debug\RNA_SeqData_Analysis.exe
+E:\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\bin\Debug\RNA_SeqData_Analysis.pdb
+E:\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\obj\Debug\RNA_SeqData_Analysis.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\obj\Debug\RNA_SeqData_Analysis.exe
+E:\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\obj\Debug\RNA_SeqData_Analysis.pdb
+E:\Spring 2015\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\bin\Debug\RNA_SeqData_Analysis.exe.config
+E:\Spring 2015\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\obj\Debug\RNA_SeqData_Analysis.exe
+E:\Spring 2015\Bio Informatics\Assignment 8\RNA_SeqData_Analysis\RNA_SeqData_Analysis\obj\Debug\RNA_SeqData_Analysis.pdb
