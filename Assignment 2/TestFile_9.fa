@@ -1,0 +1,53 @@
+>chr1.66999824.67000051.NM_032291_exon_0_0_chr1_66999825_f.+		 len=227
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = TTTCTCTCAG
+
+--- Optimum Smith-Waterman score = 454 (i=227, j=67000051)
+
+>chr1.67091529.67091593.NM_032291_exon_1_0_chr1_67091530_f.+		 len=64
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = GATTGAAAAA
+
+--- Optimum Smith-Waterman score = 128 (i=64, j=67091593)
+
+>chr1.67098752.67098777.NM_032291_exon_2_0_chr1_67098753_f.+		 len=25
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = AGGTTCACCA
+
+--- Optimum Smith-Waterman score = 50 (i=25, j=67098777)
+
+>chr1.67101626.67101698.NM_032291_exon_3_0_chr1_67101627_f.+		 len=72
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = CAGCCCAGCC
+
+--- Optimum Smith-Waterman score = 144 (i=72, j=67101698)
+
+>chr1.67105459.67105516.NM_032291_exon_4_0_chr1_67105460_f.+		 len=57
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = AAGAAAAGCA
+
+--- Optimum Smith-Waterman score = 114 (i=57, j=67105516)
+
+>chr1.67108492.67108547.NM_032291_exon_5_0_chr1_67108493_f.+		 len=55
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = AACTCACCTG
+
+--- Optimum Smith-Waterman score = 110 (i=55, j=67108547)
+
+>chr1.67109226.67109402.NM_032291_exon_6_0_chr1_67109227_f.+		 len=176
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = CTACCAAAGG
+
+--- Optimum Smith-Waterman score = 352 (i=176, j=67109402)
+
+>chr1.67126195.67126207.NM_032291_exon_7_0_chr1_67126196_f.+		 len=12
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = AGGAAAAGTC
+
+--- Optimum Smith-Waterman score = 24 (i=12, j=171314484)
+
+>chr1.67133212.67133224.NM_032291_exon_8_0_chr1_67133213_f.+		 len=12
+
+ref(1-10) = NNNNNNNNNN ; patern(1-10) = AGGCGCAGCC
+
+--- Optimum Smith-Waterman score = 24 (i=12, j=214153268)

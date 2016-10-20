@@ -1,0 +1,43 @@
+pseudo code for the Smith-Waterman, Linear gap scoring, 2-cols version.
+(space optimized version, by keeping pattern_size*2 space)
+
+--------------------------------------------
+Main module (driver):
+  open the reference sequence file (only 1 seq, e.g., chr1.fa);
+  ref_ID = read a line (str1);
+  while not eof
+     read a line (str1);
+     ref_seq += str1;
+  close the reference sequence file;
+
+  open pattern sequences file (multiple seqs);
+  //read a line (str2);
+  while not eof
+     read one pattern_ID;
+     read one pattern_seq;
+     display pattern_ID;
+     call Smith-Waterman(ref_seq, pattern_seq);
+  close the pattern sequences file;
+---------------------------------------------
+
+Smith-Waterman function (ref_str, pattern):
+  declare Vtable[pattern_size+1][2]; //only 2 cols
+  initialize Vtable[i][0]=0, for all 0<=i<=pattern_size; //init 1st col, 0
+  loop for (j=1~ref_size) //for each ref_seq char
+  {  loop for (i=0~pattern_size) //for each col of Vtable
+     {  if (i==0)
+           Vtable[i][1] = 0; //init val 0 for [0][1]; 1st row of 2nd col
+        else
+           find maxVal from 4 choices (0,left,upper,diagonal);
+           Vtable[i][1] = maxVal;
+
+        if(Vtable[i][1] >= optimumScore)
+           update optimumScore with Vtable[i][1];
+           update optimum_index_i and optimum_index_j;
+     }//loop i
+     loop for (k=0~pattern_size)
+        Vtable[k][0] = Vtable[k][1]; //move 2nd col to 1st col
+  }//loop j
+
+  display OptimumScore and optimum_index_i&j;
+----------------------------------------------

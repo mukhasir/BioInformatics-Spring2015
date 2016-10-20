@@ -1,0 +1,9 @@
+E:\Bio Informatics\Assignment 1\GeneData\GeneData\bin\Debug\GeneData.exe.config
+E:\Bio Informatics\Assignment 1\GeneData\GeneData\bin\Debug\GeneData.exe
+E:\Bio Informatics\Assignment 1\GeneData\GeneData\bin\Debug\GeneData.pdb
+E:\Bio Informatics\Assignment 1\GeneData\GeneData\obj\Debug\GeneData.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 1\GeneData\GeneData\obj\Debug\GeneData.exe
+E:\Bio Informatics\Assignment 1\GeneData\GeneData\obj\Debug\GeneData.pdb
+E:\Spring 2015\Bio Informatics\Assignment 1\GeneData\GeneData\bin\Debug\GeneData.exe.config
+E:\Spring 2015\Bio Informatics\Assignment 1\GeneData\GeneData\obj\Debug\GeneData.exe
+E:\Spring 2015\Bio Informatics\Assignment 1\GeneData\GeneData\obj\Debug\GeneData.pdb

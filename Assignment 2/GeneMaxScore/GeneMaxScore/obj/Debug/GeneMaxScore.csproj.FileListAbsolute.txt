@@ -1,0 +1,6 @@
+E:\Bio Informatics\Assignment 2\GeneMaxScore\GeneMaxScore\bin\Debug\GeneMaxScore.exe.config
+E:\Bio Informatics\Assignment 2\GeneMaxScore\GeneMaxScore\bin\Debug\GeneMaxScore.exe
+E:\Bio Informatics\Assignment 2\GeneMaxScore\GeneMaxScore\bin\Debug\GeneMaxScore.pdb
+E:\Bio Informatics\Assignment 2\GeneMaxScore\GeneMaxScore\obj\Debug\GeneMaxScore.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 2\GeneMaxScore\GeneMaxScore\obj\Debug\GeneMaxScore.exe
+E:\Bio Informatics\Assignment 2\GeneMaxScore\GeneMaxScore\obj\Debug\GeneMaxScore.pdb
