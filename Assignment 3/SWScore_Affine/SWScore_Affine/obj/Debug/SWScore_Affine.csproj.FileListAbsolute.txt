@@ -1,0 +1,12 @@
+E:\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\bin\Debug\SWScore_Affine.exe.config
+E:\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\bin\Debug\SWScore_Affine.exe
+E:\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\bin\Debug\SWScore_Affine.pdb
+E:\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\obj\Debug\SWScore_Affine.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\obj\Debug\SWScore_Affine.exe
+E:\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\obj\Debug\SWScore_Affine.pdb
+E:\Spring 2015\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\bin\Debug\SWScore_Affine.exe.config
+E:\Spring 2015\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\obj\Debug\SWScore_Affine.exe
+E:\Spring 2015\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\obj\Debug\SWScore_Affine.pdb
+E:\Spring 2015\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\bin\Debug\SWScore_Affine.exe
+E:\Spring 2015\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\bin\Debug\SWScore_Affine.pdb
+E:\Spring 2015\Bio Informatics\Assignment 3\SWScore_Affine\SWScore_Affine\obj\Debug\SWScore_Affine.csprojResolveAssemblyReference.cache

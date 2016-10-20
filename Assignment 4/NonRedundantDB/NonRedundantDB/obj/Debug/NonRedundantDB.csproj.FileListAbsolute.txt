@@ -1,0 +1,6 @@
+E:\Bio Informatics\Assignment 4\NonRedundantDB\NonRedundantDB\bin\Debug\NonRedundantDB.exe.config
+E:\Bio Informatics\Assignment 4\NonRedundantDB\NonRedundantDB\bin\Debug\NonRedundantDB.exe
+E:\Bio Informatics\Assignment 4\NonRedundantDB\NonRedundantDB\bin\Debug\NonRedundantDB.pdb
+E:\Bio Informatics\Assignment 4\NonRedundantDB\NonRedundantDB\obj\Debug\NonRedundantDB.csprojResolveAssemblyReference.cache
+E:\Bio Informatics\Assignment 4\NonRedundantDB\NonRedundantDB\obj\Debug\NonRedundantDB.exe
+E:\Bio Informatics\Assignment 4\NonRedundantDB\NonRedundantDB\obj\Debug\NonRedundantDB.pdb

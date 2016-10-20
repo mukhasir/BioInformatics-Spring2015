@@ -1,0 +1,25 @@
+median string: CAGTGA (tot_dist = 2)
+motif consensus string: CAGTGA (consensus_score = 28)
+motif positions/string s=(s1..st): 
+	249(CAGTGA),173(CAGTGA),176(CGGTGA),4(CGGTGA),71(CAGTGA)
+
+median string: GACGCG (tot_dist = 2)
+motif consensus string: GACGCG (consensus_score = 28)
+motif positions/string s=(s1..st): 
+	203(GACGCG),218(GACGCG),87(GACGCG),101(GACCCG),237(GAAGCG)
+
+median string: GCCAGA (tot_dist = 2)
+motif consensus string: GCCAGA (consensus_score = 28)
+motif positions/string s=(s1..st): 
+	39(GCCAGA),6(GTCAGA),49(GCCAGA),97(GCCAGA),196(GCGAGA)
+
+median string: ATTAAC (tot_dist = 3)
+motif consensus string: ATTAAC (consensus_score = 27)
+motif positions/string s=(s1..st): 
+	222(ATTAAC),47(AAAAAC),56(ATTAAC),12(ATTAAC),29(AATAAC)
+
+median string: ATTCTG (tot_dist = 3)
+motif consensus string: ATTCTG (consensus_score = 27)
+motif positions/string s=(s1..st): 
+	31(ATGCTG),210(ATTCTG),63(CTTCTG),46(ATTCTG),13(ATTTTG)
+

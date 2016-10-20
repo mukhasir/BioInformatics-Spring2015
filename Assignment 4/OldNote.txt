@@ -1,0 +1,210 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.IO.MemoryMappedFiles;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace NonRedundantDB
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string HMPLabel = string.Empty;
+            string HMPSeq = string.Empty;
+            string MetaHitLabel = string.Empty;
+            string MetaHitSeq = string.Empty;
+            string HMPnrData = string.Empty;
+            string MetaHITnrData = string.Empty;
+            bool FilePresent = false;
+            //STEP : 1
+            //Initialize KeyValuePair List for storing database sequences.
+            List<KeyValuePair<string, string>> MetaHit20000_Data = new List<KeyValuePair<string, string>>();
+            //Loop throug database file to store the label and bases respectivel in key-value pair format.
+            foreach (string MetaHitLine in File.ReadLines(@"E:\Bio Informatics\Assignment 4\MetaHIT-20000.fa"))
+            {
+                if (MetaHitLine.Contains(">"))
+                {
+                    if (MetaHitSeq != string.Empty)
+                    {
+                        MetaHit20000_Data.Add(new KeyValuePair<string, string>(MetaHitLabel, MetaHitSeq));
+                        MetaHitSeq = string.Empty;
+                    }
+                    MetaHitLabel = MetaHitLine;
+                }
+                else
+                {
+                    MetaHitSeq += MetaHitLine;
+                }
+            }
+            MetaHit20000_Data.Add(new KeyValuePair<string, string>(MetaHitLabel, MetaHitSeq));
+            RemoveMatchings(ref MetaHit20000_Data, @"E:\Bio Informatics\Assignment 4\MetaHit-nr-HMP.fa");
+            var result = String.Join("\n", MetaHit20000_Data.ToList().ToArray());
+            string nrData = result.Replace("[", "").Replace("]", "").Replace(",", "\n");
+            File.WriteAllText(@"E:\Bio Informatics\Assignment 4\MetaHIT-nr-HMP_95.fa", nrData);
+            Console.WriteLine("Press 'Y' after Homology of HMP2000.fa against MetaHIT-nr-HMP_95.fa is created in blast.");
+            ConsoleKeyInfo FileKeyValue = Console.ReadKey();
+            try
+            { 
+                FileStream fs1 = File.Open(@"E:\Bio Informatics\Assignment 4\OldNote.txt", FileMode.Open);
+                FilePresent = true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("\n File Not Present, please verify.");
+            }
+            if (FileKeyValue.Key.ToString().ToLower() == "y" && FilePresent == true)
+            {
+                //STEP : 2
+                //Initialize KeyValuePair List for storing database sequences.
+                Console.WriteLine("HMP2000_Start" + DateTime.Now);
+                List<KeyValuePair<string, string>> HMP2000_Data = new List<KeyValuePair<string, string>>();
+                //int k = 0;
+                //using (FileStream fs = File.Open(@"E:\Bio Informatics\Assignment 4\HMP-2000.fa", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                //using (BufferedStream bs = new BufferedStream(fs))
+                //using (StreamReader sr = new StreamReader(bs))
+                //{
+                //    string line;
+                //    while ((line = sr.ReadLine()) != null)
+                //    {
+                //        if (line.Contains(">"))
+                //        {
+                //            //if (HMPSeq != string.Empty)
+                //            //{
+                //            //    HMP2000_Data.Add(new KeyValuePair<string, string>(HMPLabel, HMPSeq));
+                //            //    HMPSeq = string.Empty;
+                //            //}
+                //            //HMPLabel = line;
+                //            k++;
+                //            using (StreamWriter sw = File.AppendText(@"E:\Bio Informatics\Assignment 4\results.fa"))
+                //            {
+                //                sw.Write("\n" + line + "\n");
+                //            }
+                //            Console.WriteLine(k + ":::::" + DateTime.Now);
+                //        }
+                //        else
+                //        {
+                //            //HMPSeq += line;
+                //            using (StreamWriter sw = File.AppendText(@"E:\Bio Informatics\Assignment 4\results.fa"))
+                //            {
+                //                sw.Write(line);
+                //            }
+                //            //using (StreamWriter sw = new StreamWriter())
+                //            //{
+                //            //    sw.Write(line);
+                //            //}
+                //        }
+                //    }
+                //}
+
+                Console.WriteLine("HMPSTARt:::::" + DateTime.Now);
+                foreach (string HMPline in File.ReadAllLines(@"e:\bio informatics\assignment 4\results.fa"))
+                {
+                    if (HMPline.Contains(">"))
+                    {
+                        if (HMPSeq != string.Empty)
+                        {
+                            HMP2000_Data.Add(new KeyValuePair<string, string>(HMPLabel, HMPSeq));
+                            Console.WriteLine(HMP2000_Data.Count + ":::::" + DateTime.Now);
+                            HMPSeq = string.Empty;
+                        }
+                        HMPLabel = HMPline;
+                    }
+                    else
+                    {
+                        HMPSeq += HMPline.Trim();
+                    }
+                }
+                HMP2000_Data.Add(new KeyValuePair<string, string>(HMPLabel, HMPSeq));
+                Console.WriteLine(HMP2000_Data.Count + ":::::" + DateTime.Now);
+                //
+                Console.WriteLine("end hmp" + DateTime.Now);
+                //HMPnrData = 
+                RemoveMatchings(ref HMP2000_Data, @"E:\Bio Informatics\Assignment 4\HMP-nr-(MetaHIT-nr-HMP).fa");
+                foreach (KeyValuePair<string, string> V in HMP2000_Data)
+                {
+                    using (StreamWriter sw = File.AppendText(@"E:\Bio Informatics\Assignment 4\HMP-nr-(MetaHIT-nr-HMP)_95.fa"))
+                    {
+                        sw.WriteLine(V.Key);
+                        sw.WriteLine(V.Value);
+                    }
+                }
+                Console.WriteLine("HMPend" + HMP2000_Data.Count.ToString());
+                MetaHit20000_Data.AddRange(HMP2000_Data);
+                MetaHit20000_Data.Sort(Compare);
+                List<string> FinalData = new List<string>();
+                foreach (KeyValuePair<string, string> PatternValue in MetaHit20000_Data)
+                {
+                    FinalData.Add(PatternValue.Key + "\t" + PatternValue.Value.Length);
+                }
+                var Finalresult = String.Join("\n", FinalData.ToList().ToArray());
+                File.WriteAllText(@"E:\Bio Informatics\Assignment 4\Union_HMP_MetaHIT.fa", Finalresult);
+                Console.WriteLine("End");
+            }
+        }
+        static int Compare(KeyValuePair<string, string> a, KeyValuePair<string, string> b)
+        {
+            return a.Key.CompareTo(b.Key);
+        }
+        public static void RemoveMatchings(ref List<KeyValuePair<string,string>> Data, string Path)
+        {
+            string query = string.Empty;
+            double length = 0.0;
+            double align = 0.0;
+            bool QueryLength = false;
+            bool MatchDelete = false;
+            string Seq = string.Empty;
+            string Label = string.Empty;
+ 
+            foreach (string lines in File.ReadAllLines(Path))
+            {
+                if (lines.Contains("Query="))
+                {
+                    string[] QueryValue = lines.Split('=');
+                    query = QueryValue[1];//stores label name
+                    query = ">" + query.Trim();
+                    QueryLength = true;
+                    MatchDelete = true;
+                }
+                else if (lines.Contains("Length=") || lines.Contains("Identities = "))
+                {
+                    if (lines.Contains("Length="))
+                    {
+                        if (QueryLength)
+                        {
+                            string[] LengthValue = lines.Split('=');//stores data/bases of protein.
+                            length = Convert.ToInt32(LengthValue[1]);
+                            QueryLength = false;
+                        }
+                    }
+                    else if (lines.Contains("Identities = "))
+                    {
+                        if (MatchDelete)
+                        {
+                            double Value = 0.0;
+                            string value = lines.Substring(lines.IndexOf('/') + 1, ((lines.IndexOf('(') - 1) - (lines.IndexOf('/') + 1))).Trim();
+                            align = Convert.ToInt32(value);
+                            int i = 0;
+                            foreach (KeyValuePair<string, string> DataValue in Data.ToList())
+                            {
+                                if (query == DataValue.Key)
+                                {
+                                    Value = (align / length) * 100;
+                                    if (Value >= 90.0 && Value <= 110.0)
+                                    {
+                                        Data.RemoveAt(i);
+                                        MatchDelete = false;
+                                        break;
+                                    }
+                                }
+                                i++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
